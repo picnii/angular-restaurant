@@ -1,26 +1,30 @@
 <!doctype HTML>
-<html >
+<html ng-app="restaurant">
 <head>
-	<title>Project Name</title>
+	<title>Restaurant</title>
 	<!-- Libraly include-->
 	<script type="text/javascript" src="lib/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/angular.min.js"></script>
 	<script type="text/javascript" src="lib/angular-resource.min.js"></script>
 	<!-- Bootstrap Libraly-->
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 	<!-- if responsive -->
 	<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">-->
 	<!-- js include-->
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="init.js"></script>
-	<script type="text/javascript" src="service.js"></script>
-	<script type="text/javascript" src="Controller.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/service.js"></script>
+	<script type="text/javascript" src="js/Controller.js"></script>
 	<!-- css include -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
 </head>
 <body>
+	<section ng-controller="HomeCtrl">
+		<input ng-model="test"><br/>
+		{{test}}
 
+	</section>
 </body>
 </html>

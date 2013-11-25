@@ -1,8 +1,8 @@
 //example of normal controller
-/*function HomeCtrl($scope)
+function HomeCtrl($scope)
 {
-
-}*/
+	$scope.test = "Hello World";
+}
 
 //controller that get data from $http
 /*function TestCtrl($scope, $location, $http)

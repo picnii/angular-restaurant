@@ -1,11 +1,11 @@
-//var app = angular.module('MyApp',[])
+var app = angular.module('restaurant',[]);
 
 //Routing
 /*app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/', {templateUrl: 'pages/home.html',   controller: HomeCtrl}).
-        when('/test', {templateUrl: 'template/test.html',   controller: TestCtrl}).
-        when('/test/:test_id', {templateUrl: 'template/test-unit.html',   controller: TestUnitCtrl}).
+        when('/test', {templateUrl: 'pages/test.html',   controller: TestCtrl}).
+        when('/test/:test_id', {templateUrl: 'pages/test-unit.html',   controller: TestUnitCtrl}).
 		otherwise({redirectTo: '/'});
 }]);*/
 

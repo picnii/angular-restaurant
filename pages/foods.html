@@ -1,0 +1,10 @@
+<section  class="container">
+	<h2>{{name}}</h2>
+	<div ng-repeat="food in foods">
+		<div>
+			<h4>{{food.name}}</h4>
+			<a ng-href="#/{{type}}/{{food.name}}"><img ng-src="{{food.picture}}" /></a>
+			<span>{{food.price}}</span>
+		</div>
+	</div>
+</section>

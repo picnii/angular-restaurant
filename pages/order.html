@@ -1,0 +1,11 @@
+<section  class="container">
+	<h2>Carts</h2>
+	<div ng-repeat="food in carts">
+		<div>
+			<h4>{{food.name}}</h4>
+			<a ng-href="#/{{type}}/{{food.name}}"><img ng-src="{{food.picture}}" /></a>
+			<span>{{food.price}} บาท</span>
+			<span>{{food.qty}} ชิ้น</span>
+		</div>
+	</div>
+</section>

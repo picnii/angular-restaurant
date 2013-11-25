@@ -1,13 +1,16 @@
 var app = angular.module('restaurant',[]);
 
 //Routing
-/*app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/', {templateUrl: 'pages/home.html',   controller: HomeCtrl}).
-        when('/test', {templateUrl: 'pages/test.html',   controller: TestCtrl}).
-        when('/test/:test_id', {templateUrl: 'pages/test-unit.html',   controller: TestUnitCtrl}).
+        when('/foods', {templateUrl: 'pages/foods.html',   controller: FoodCtrl}).
+        when('/drinks', {templateUrl: 'pages/foods.html',   controller: DrinkCtrl}).
+        when('/foods/:food_name', {templateUrl: 'pages/food-unit.html',   controller: FoodUnitCtrl}).
+        when('/drinks/:food_name', {templateUrl: 'pages/food-unit.html',   controller: FoodUnitCtrl}).
+        when('/order', {templateUrl: 'pages/order.html',   controller: OrderCtrl}).
 		otherwise({redirectTo: '/'});
-}]);*/
+}]);
 
 
 //Filter

@@ -38,14 +38,14 @@
 	  <!-- Collect the nav links, forms, and other content for toggling -->
 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#/foods">Foods</a></li>
-	      <li><a href="#/drinks">Drinks</a></li>
+	      <li class="{{menus['home'].class}}"><a ng-href="{{menus['home'].url}}">{{menus['home'].name}}</a></li>
+	      <li class="{{menus['foods'].class}}"><a href="{{menus['foods'].url}}">{{menus['foods'].name}}</a></li>
+	      <li class="{{menus['drinks'].class}}"><a href="{{menus['drinks'].url}}">{{menus['drinks'].name}}</a></li>
 	      
 	    </ul>
 	   
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#/order">Orders</a></li>
+	      <li class="{{menus['order'].class}}"><a href="{{menus['order'].url}}">{{menus['order'].name}}</a></li>
 	      
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
